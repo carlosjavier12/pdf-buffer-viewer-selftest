@@ -16,7 +16,9 @@ Este proyecto permite visualizar archivos PDF utilizando un buffer. A continuaci
 
 ## Ejemplo de uso
 
-![Ejemplo de funcionamiento](https://via.placeholder.com/600x400.png?text=Ejemplo+PDF)
+![Ejemplo de funcionamiento]
+<img width="1118" height="990" alt="image" src="https://github.com/user-attachments/assets/47950eaa-dc5a-4e74-a129-89ce028db760" />
+
 
 ## Instalación
 
