@@ -7,10 +7,10 @@ Este proyecto permite visualizar archivos PDF utilizando un buffer. A continuaci
 ```json
 {
   "scripts": {
-    "start": "node index.js",
-    "test": "mocha test/",
-    "build": "webpack --config webpack.config.js"
-  }
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
 }
 ```
 
@@ -25,5 +25,7 @@ Este proyecto permite visualizar archivos PDF utilizando un buffer. A continuaci
 Para instalar las dependencias, ejecute:
 
 ```bash
-npm install
+npm i
+npm run api
+npm run dev
 ```
