@@ -32,13 +32,16 @@ npm run dev
 
 1 Buffer embebido (tu caso actual)
 
+```tsx
 import { embeddedPdfBase64, base64ToUint8Array } from './embeddedPdf'
 const buffer = base64ToUint8Array(embeddedPdfBase64)
 <PdfViewer source={buffer} />
+```
 
 
 2 Desde un archivo local (input file)
 
+```tsx
 import { useState } from 'react'
 import PdfViewer from './PdfViewer'
 function App() {
@@ -58,10 +61,12 @@ function App() {
     </>
   )
 }
+```
 
 
 3 Desde un backend con fetch
 
+```tsx
 import { useEffect, useState } from 'react'
 import PdfViewer from './PdfViewer'
 function App() {
@@ -73,3 +78,4 @@ function App() {
   }, [])
   return buffer ? <PdfViewer source={buffer} /> : <p>Cargando…</p>
 }
+```
