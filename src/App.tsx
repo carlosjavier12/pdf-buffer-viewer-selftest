@@ -1,11 +1,13 @@
 import PdfViewer from './PdfViewer'
+import { embeddedPdfBase64, base64ToUint8Array } from './embeddedPdf'
 
-export default function App() {
+function App() {
+  // Caso actual: sigues trabajando con un buffer (Uint8Array)
+  const buffer = base64ToUint8Array(embeddedPdfBase64)
+
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif' }}>
-      <h1>PDF Buffer Viewer - Self Test</h1>
-      <p>Renderiza un PDF desde un <b>buffer</b> (sin URL pública).</p>
-      <PdfViewer />
-    </div>
+    <PdfViewer source={buffer} />
   )
 }
+
+export default App
